@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 150px;
+    padding: 0;
+    background:linear-gradient(120deg, #12c2e9, #c471ed, #f64f59);
+    display: flex;
+    flex-direction: column; /* Align elements vertically */
+    align-items: center; /* Center elements horizontally */
+    min-height: 50vh;
+}
+
+h1 {
+    color: #333333;
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px 40px; /* Increased padding to make the box larger */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    width: 400px; /* Fixed width for the box */
+    text-align: center;
+    align-items: center;
+}
+
+button {
+    display: block; /* Stack buttons vertically */
+    width: 300px; /* Full width buttons */
+    background:linear-gradient(120deg, #12c2e9, #c471ed, #f64f59);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px; /* Larger button padding */
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 40px; /* Vertical spacing between buttons */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: rgb(31, 142, 194);
+  }
+

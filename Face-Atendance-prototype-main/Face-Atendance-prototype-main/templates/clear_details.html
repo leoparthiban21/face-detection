@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear</title>
+    <style>
+      
+
+/* Create a wavy background overlay */
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(215, 210, 210, 0.1),   /* Lighter gray-brown with 10% opacity */
+    rgba(255, 255, 255, 0.15) 10px,   /* Slightly lighter white with 15% opacity */
+    rgba(215, 190, 190, 0.2) 20px,   /* Lighter pinkish-gray with 20% opacity */
+    rgba(215, 190, 190, 0.2) 30px   /* Same lighter pinkish-gray */
+    );
+    background-size: 200% 200%;
+    
+    animation: wave-background 10s linear infinite; /* Apply wave animation */
+    pointer-events: none; /* Prevent the overlay from blocking interactions */
+}
+
+/* Keyframes to animate the wave effect */
+@keyframes wave-background {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Glitter effect */
+@keyframes glitter {
+            0% {
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+            }
+            50% {
+                text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+            }
+            100% {
+                text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff;
+            }
+        }
+        .glitter-text {
+            animation: glitter 1.5s linear infinite; /* Animation to make the text glitter */
+            color: rgb(24, 20, 20);
+            text-align: center
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">{{ message }}</h1>
+        
+        <button onclick="location.href='/admin_dashboard'">back admin dashboard</button>
+    </div>
+        
+    </body>
+</html>
