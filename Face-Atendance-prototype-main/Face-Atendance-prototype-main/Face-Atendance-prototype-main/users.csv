@@ -1,0 +1,11 @@
+name,age,email,password,attendance_count
+charlie,19,student1@example.com,password1,3
+raj,20,student2@example.com,password2,3
+praveen,19,student3@example.com,password3,3
+rajini,20,student4@example.com,password4,0
+dhanush,19,student5@example.com,password5,0
+ajith,20,student6@example.com,password6,0
+sk,19,student7@example.com,password7,5
+cris,20,student8@example.com,password8,0
+tom,19,student9@example.com,password9,0
+robert,20,student10@example.com,password10,4
